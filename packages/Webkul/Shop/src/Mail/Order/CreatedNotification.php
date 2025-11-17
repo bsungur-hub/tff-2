@@ -51,7 +51,7 @@ class CreatedNotification extends Mailable
         \Log::info('DEBUG: Shop mail build() tetiklendi - Order ID: ' . $this->order->id);
 
         try {
-            // PDF oluştur
+            // PDF olustur bakim ...
             $pdf = PackingSlipGenerator::makePdf($this->order);
 
             // Cart’tan notu al
